@@ -1,0 +1,19 @@
+import React from 'react';
+import filterProps from '../utils/filter-props';
+
+import { {{pascalCase componentName}}Props } from './{{pascalCase componentName}}.types';
+import { {{pascalCase componentName}}Style } from './styles';
+
+const {{pascalCase componentName}}: React.FC<{{pascalCase componentName}}Props> = ({ children, ...rest }) => {
+    const filteredProps = filterProps(rest);
+
+    return (
+        <{{pascalCase componentName}}Style {...filteredProps}>
+            {children}
+        </{{pascalCase componentName}}Style>
+    )
+};
+
+{{pascalCase componentName}}.displayName = '{{pascalCase componentName}}';
+
+export default {{pascalCase componentName}};
