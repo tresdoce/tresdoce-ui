@@ -14,7 +14,8 @@ on:
 env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
-  GITHUB_EMAIL: 'github-actions[bot]@users.noreply.github.com'
+  GITHUB_EMAIL: ${{ secrets.GH_EMAIL }}
+  #'github-actions[bot]@users.noreply.github.com'
 
 jobs:
   setup:
