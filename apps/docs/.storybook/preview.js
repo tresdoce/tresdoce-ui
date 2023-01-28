@@ -12,7 +12,7 @@ export const parameters = {
     isFullscreen: false,
     storySort: {
       method: 'alphabetical',
-      order: ['Introduction', 'Components', 'Foundations'],
+      order: ['Introduction', 'Components', 'Foundations', 'Changelog'],
     },
   },
   controls: {
@@ -36,7 +36,7 @@ export const parameters = {
 
 export const globalTypes = {
   theme: {
-    name: 'Tiimiit',
+    name: 'Tresdoce UI',
     description: 'Global theme for components',
     defaultValue: 'light',
   },
