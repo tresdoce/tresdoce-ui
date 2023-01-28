@@ -6,24 +6,21 @@
 <div align="center">
     <img src="https://img.shields.io/static/v1.svg?style=flat&label=Node&message=v14.17.0&labelColor=339933&color=757575&logoColor=FFFFFF&logo=Node.js" alt="Node.js"/>
     <img src="https://img.shields.io/static/v1.svg?style=flat&label=Npm&message=v6.14.13&labelColor=CB3837&logoColor=FFFFFF&color=757575&logo=npm" alt="Npm"/>
-    <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="lerna">
-    <a href="./license.md">
+    <a href="../../license.md">
         <img alt="GitHub license" src="https://img.shields.io/github/license/tresdoce/tresdoce-ui?style=flat">
     </a>
-    <a href="https://github.com/tresdoce/tresdoce-ui/actions/workflows/master.yml" target="_blank">
-        <img alt="GitHub Workflow Status" src="https://github.com/tresdoce/tresdoce-ui/actions/workflows/master.yml/badge.svg">
-    </a>
+    <img alt="Release" src="https://img.shields.io/npm/v/@tresdoce-ui/core.svg">
     <br/> 
 </div>
 <br>
 
 ## Glosario
 
-- [📕 Storybook](https://tresdoce.github.io/tresdoce-ui/)
 - [📝 Requerimientos básicos](#basic-requirements)
-- [💻 Scripts](#scripts)
-- [📤 Commits](#commits)
-- [📜 License MIT](license.md)
+- [🛠️ Instalar dependencia](#install-dependencies)
+- [👨‍💻 Uso](#use)
+- [📄 Changelog](./CHANGELOG.md)
+- [📜 License MIT](../../license.md)
 
 ---
 
@@ -34,66 +31,56 @@
 - Node.js v14.17.0 or higher ([Download](https://nodejs.org/es/download/))
 - YARN v1.22.17 or higher
 - NPM v6.14.13 or higher
-- Lerna
 
-<a name="scripts"></a>
+<a name="install-dependencies"></a>
 
-## 💻 Scripts
-
-Instalar Lerna
+## 🛠️ Instalar dependencia
 
 ```
-npm i -g lerna
+npm install -S @tresdoce-ui/core
 ```
 
-Instalar dependencias del monorepo
-
 ```
-yarn install
+yarn add @tresdoce-ui/core
 ```
 
-Crear paquetes
+<a name="use"></a>
 
-```
-yarn plop
-```
+## 👨‍💻 Uso
 
-Modo desarrollo
+### Provider
 
-```
-yarn dev
-```
+Se requiere instnaciar el provider en el componente de mayor jerarquia para impactar a los componentes hijos.
 
-Transpilar paquetes
+```typescript
+import { Provider } from '@tresdoce-ui/core';
 
-```
-yarn build
-```
+function App() {
+  return (
+    <Provider variant={'theme-a'}>
+      <Components />
+    </Provider>
+  );
+}
 
-Test paquetes
-
-```
-yarn test
+export default App;
 ```
 
-<a name="commits"></a>
+Ejemplo para importar un componente y usarlo en la app.
 
-## 📤 Commits
+```typescript
+import { Button } from '@tresdoce-ui/core';
 
-Para los mensajes de commits se toma como
-referencia [`conventional commits`](https://www.conventionalcommits.org/es/v1.0.0/#resumen).
+function Component() {
+  return <Button>Example</Button>;
+}
 
-```
-<type>[optional scope]: <description>
-
-[optional body]
-
-[optional footer]
+export default Component;
 ```
 
-- **type:** chore, docs, feat, fix, refactor, test (más comunes)
-- **scope:** indica la página, componente, funcionalidad
-- **description:** comienza en minúsculas y no debe superar los 72 caracteres.
+## 📄 Changelog
+
+Todos los cambios notables de este paquete se documentarán en el archivo [Changelog](./CHANGELOG.md).
 
 ---
 

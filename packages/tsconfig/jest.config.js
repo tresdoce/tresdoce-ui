@@ -1,0 +1,28 @@
+module.exports = {
+  moduleFileExtensions: ['js', 'json', 'ts', 'tsx', 'jsx'],
+  forceExit: true,
+  verbose: true,
+  rootDir: '.',
+  testMatch: ['**/*.(spec|it|test|e2e|e2e-spec).(t|j)(s|sx)'],
+  transform: {
+    '^.+\\.(t|j)s$': 'ts-jest',
+  },
+  roots: ['<rootDir>/src/'],
+  collectCoverage: true,
+  collectCoverageFrom: ['**/*.(t|j)(s|sx)', '!**/index.(t|j)(s|sx)'],
+  coverageDirectory: './coverage',
+  coveragePathIgnorePatterns: [
+    'node_modules',
+    'node_modules/*',
+    'dist',
+    'dist/*',
+    'stories/*',
+    'stories/*.stories.*',
+    'src/index.ts',
+    'src/*/index.ts',
+  ],
+  moduleDirectories: ['node_modules'],
+  preset: 'ts-jest',
+  testResultsProcessor: 'jest-sonar-reporter',
+  testEnvironment: 'jsdom',
+};

@@ -1,0 +1,19 @@
+{
+  "name": "@tresdoce-ui/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "base.json",
+    "node16.json",
+    "react-library.json",
+    "jest.config.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "exit 0"
+  }
+}
