@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.0.1-beta.2](https://github.com/tresdoce/tresdoce-ui/compare/@tresdoce-ui/core@0.0.1-beta.1...@tresdoce-ui/core@0.0.1-beta.2) (2023-01-28)
+
+### 👨‍💻 Chores
+
+- add sb deployer ([c349ff0](https://github.com/tresdoce/tresdoce-ui/commit/c349ff009794f719d1ebabd27329d0087d97c574))
+
 ### [0.0.1-beta.1](https://github.com/tresdoce/tresdoce-ui/compare/@tresdoce-ui/core@0.0.1-beta.0...@tresdoce-ui/core@0.0.1-beta.1) (2023-01-28)
 
 ### 👨‍💻 Chores
