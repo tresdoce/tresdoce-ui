@@ -37,11 +37,11 @@
 ## 🛠️ Instalar dependencia
 
 ```
-npm install -S @tresdoce-ui/core
+yarn add @tresdoce-ui/core
 ```
 
 ```
-yarn add @tresdoce-ui/core
+npm install -S @tresdoce-ui/core
 ```
 
 <a name="use"></a>
@@ -50,7 +50,7 @@ yarn add @tresdoce-ui/core
 
 ### Provider
 
-Se requiere instnaciar el provider en el componente de mayor jerarquia para impactar a los componentes hijos.
+Se requiere instnaciar el provider en el componente de mayor jerarquía para impactar a los componentes hijos.
 
 ```typescript
 import { Provider } from '@tresdoce-ui/core';
