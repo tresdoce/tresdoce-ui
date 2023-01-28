@@ -27,24 +27,24 @@ module.exports = {
   ],
   framework: '@storybook/react',
   core: {
-    builder: '@storybook/builder-vite',
+    builder: 'webpack5',
   },
-  async viteFinal(config, { configType }) {
-    // customize the Vite config here
-    if (configType === 'PRODUCTION') {
-      config.base = './';
-    }
-
-    return {
-      ...config,
-      resolve: {
-        alias: [
-          {
-            find: '@nerdearla-style-react/core',
-            replacement: path.resolve(__dirname, '../../../packages/tresdoce-test-core/'),
+  webpackFinal: (config) => {
+    config.module.rules.push({
+      test: /\.css$/,
+      use: [
+        {
+          loader: 'postcss-loader',
+          options: {
+            postcssOptions: {
+              plugins: [require('autoprefixer')],
+            },
           },
-        ],
-      },
-    };
+        },
+      ],
+      include: path.resolve(__dirname, '../'),
+    });
+
+    return config;
   },
 };

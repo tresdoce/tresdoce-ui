@@ -1,15 +1,15 @@
 <div align="center">
-    <img alt="nestjs-logo" width="250" height="auto" src="https://raw.githubusercontent.com/tiimiit-lab/nerdearla-style-react/main/.readme-static/logo-tiimiit.svg" />
-    <h1>Tiimiit Lab - Core </h1>
+    <img alt="mex-logo" width="180" height="auto" src="https://raw.githubusercontent.com/tresdoce/tresdoce-ui/master/.readme-static/logo-mex-red.svg" />
+    <h1>Tresdoce UI</h1>
 </div>
 
 <div align="center">
     <img src="https://img.shields.io/static/v1.svg?style=flat&label=Node&message=v14.17.0&labelColor=339933&color=757575&logoColor=FFFFFF&logo=Node.js" alt="Node.js"/>
     <img src="https://img.shields.io/static/v1.svg?style=flat&label=Npm&message=v6.14.13&labelColor=CB3837&logoColor=FFFFFF&color=757575&logo=npm" alt="Npm"/>
-    <a href="./license.md">
-        <img alt="GitHub license" src="https://img.shields.io/github/license/tiimiit-lab/nerdearla-style-react?style=flat">
+    <a href="../../license.md">
+        <img alt="GitHub license" src="https://img.shields.io/github/license/tresdoce/tresdoce-ui?style=flat">
     </a>
-    <img alt="Release" src="https://img.shields.io/npm/v/@nerdearla-style-react/core.svg">
+    <img alt="Release" src="https://img.shields.io/npm/v/@tresdoce-ui/core.svg">
     <br/> 
 </div>
 <br>
@@ -37,11 +37,11 @@
 ## 🛠️ Instalar dependencia
 
 ```
-npm install -S @nerdearla-style-react/core
+npm install -S @tresdoce-ui/core
 ```
 
 ```
-yarn add @nerdearla-style-react/core
+yarn add @tresdoce-ui/core
 ```
 
 <a name="use"></a>
@@ -53,7 +53,7 @@ yarn add @nerdearla-style-react/core
 Se requiere instnaciar el provider en el componente de mayor jerarquia para impactar a los componentes hijos.
 
 ```typescript
-import { Provider } from '@nerdearla-style-react/core';
+import { Provider } from '@tresdoce-ui/core';
 
 function App() {
   return (
@@ -69,7 +69,7 @@ export default App;
 Ejemplo para importar un componente y usarlo en la app.
 
 ```typescript
-import { Button } from '@nerdearla-style-react/core';
+import { Button } from '@tresdoce-ui/core';
 
 function Component() {
   return <Button>Example</Button>;
@@ -85,8 +85,8 @@ Todos los cambios notables de este paquete se documentarán en el archivo [Chang
 ---
 
 <div align="center">
-    <a href="mailto:arqteam@prismamp.com" target="_blank" alt="Send a email">
-        <img src="https://raw.githubusercontent.com/tiimiit-lab/nerdearla-style-react/main/.readme-static/iso-tiimiit.svg" width="80" alt="Iso Tiimiit" />
+    <a href="mailto:mdelgado@tresdoce.com.ar" target="_blank" alt="Send an email">
+        <img src="https://raw.githubusercontent.com/tresdoce/tresdoce-ui/master/.readme-static/logo-mex-red.svg" width="120" alt="Mex" />
     </a><br/>
     <p>Made with ❤</p>
 </div>
