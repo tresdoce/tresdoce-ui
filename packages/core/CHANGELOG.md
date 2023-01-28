@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [0.0.1-beta.1](https://github.com/tresdoce/tresdoce-ui/compare/@tresdoce-ui/core@0.0.1-beta.0...@tresdoce-ui/core@0.0.1-beta.1) (2023-01-28)
+
+### 👨‍💻 Chores
+
+- edit workflow ([20ae3bb](https://github.com/tresdoce/tresdoce-ui/commit/20ae3bbbb6bc7978e70ece5e4adfaeb607abf80c))
+
 ### 0.0.1-beta.0 (2023-01-28)
 
 ### 👨‍💻 Chores
