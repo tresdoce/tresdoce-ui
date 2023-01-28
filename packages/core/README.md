@@ -48,8 +48,6 @@ npm install -S @tresdoce-ui/core
 
 ## 👨‍💻 Uso
 
-### Provider
-
 Se requiere instnaciar el provider en el componente de mayor jerarquía para impactar a los componentes hijos.
 
 ```typescript
